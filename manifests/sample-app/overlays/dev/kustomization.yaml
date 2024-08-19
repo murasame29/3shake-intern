@@ -5,7 +5,7 @@ resources:
 
 images:
 - name: asia-northeast1-docker.pkg.dev/sreake-intern/intern-repo-murasame29/sample-app
-  newTag: "1"
+  newTag: "2"
 
 patches:
 - path: deployment.yaml
