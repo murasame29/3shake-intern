@@ -25,7 +25,7 @@ func run() error {
 		w.WriteHeader(http.StatusOK)
 	})
 
-	mux.HandleFunc("", func(w http.ResponseWriter, r *http.Request) {
+	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusOK)
 		fmt.Fprint(w, "hello world.")
 	})
