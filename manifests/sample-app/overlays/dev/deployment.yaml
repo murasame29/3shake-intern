@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:1.16
+        image: asia-northeast1-docker.pkg.dev/sreake-intern/intern-repo-murasame29/sample-app
         resources:
           requests:
             memory: "64Mi"

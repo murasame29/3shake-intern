@@ -57,3 +57,11 @@ module "gke" {
   subnetwork_name = module.subnet.subnetwork_name
   secondary_ip_range = module.subnet.secondary_ip_range
 }
+
+module "artifact_registry" {
+  source = "../module/gar"
+
+  region = var.region
+  repo_name = "intern-repo-murasame29"
+  description = "3 shake intern image repository"
+}

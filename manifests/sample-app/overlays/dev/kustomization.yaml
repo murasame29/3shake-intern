@@ -3,6 +3,10 @@ namespace: sample
 resources:
 - ../../base
 
+images:
+- name: asia-northeast1-docker.pkg.dev/sreake-intern/intern-repo-murasame29/sample-app
+  newTag: "1"
+
 patches:
 - path: deployment.yaml
   target:

@@ -4,7 +4,7 @@ WORKDIR /build
 COPY . .
 
 RUN go mod download \
-&& go build -o /build/main cmd/main.go 
+&& go build -o /build/main main.go 
 
 FROM gcr.io/distroless/base-debian11
 WORKDIR /app
